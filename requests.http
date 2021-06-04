@@ -1,0 +1,55 @@
+###
+
+# получение пользователя
+GET http://127.0.0.1:8080/user/1
+Content-Type: application/json
+
+###
+
+# получение пользователей
+GET http://127.0.0.1:8080/users
+Content-Type: application/json
+
+###
+
+# получение объявления
+GET http://127.0.0.1:8080/advert/1
+Content-Type: application/json
+
+###
+
+# получение объявлений
+GET http://127.0.0.1:8080/adverts
+Content-Type: application/json
+
+###
+
+# создание пользователя
+POST http://127.0.0.1:8080/user
+Content-Type: application/json
+
+{
+  "username": "Sam",
+  "email": "sam@mail.ru",
+  "password": "secretpasswordsam123"
+}
+
+###
+
+# создание объявления
+POST http://127.0.0.1:8080/advert
+Content-Type: application/json
+
+{
+  "title": "new title",
+  "text": "lorem ipsum",
+  "user_id": 1
+}
+
+###
+
+# удаление объявления
+DELETE http://127.0.0.1:8080/advert/3
+Content-Type: application/json
+
+###
